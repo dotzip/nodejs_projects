@@ -1,0 +1,21 @@
+{
+  "name": "testpro",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "dotzip",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@types/ejs": "^2.6.0",
+    "ejs": "^2.6.1",
+    "ejs-locals": "^1.0.2",
+    "ejs-yield": "^1.0.0",
+    "express": "^4.16.3"
+  }
+}
