@@ -1,17 +1,17 @@
 var express = require('express');
 var app = express()
- 
-// view engine setup
-app.set('views', __dirname + '/views')
+
+// view engine setup 
 app.set('view engine', 'ejs')
-app.use(require('ejs-yield'))
+app.set('views', __dirname + '/views')
+app.use(express.static(__dirname + '/public')); // --- publish fodlers for access
 
 app.get('/', (req, res) => {
-    res.layout('index', {title: 'Express by DotZip'});
+    res.render('index', {title: 'Express by DotZip'}); // --- just render needful file
 })
 
 app.get('/contacts', (req, res) => {
-    res.layout('contacts', {title: 'Contacts'});
+    res.render('contacts', {title: 'Contacts'}); // --- just render needful file
 })
 
 app.listen(3000, () => {
